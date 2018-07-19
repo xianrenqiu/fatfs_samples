@@ -15,9 +15,6 @@
 #if USE_RAM
 BYTE disk[SEC_SIZE * SEC_COUNT];
 #else
-#include <sys/types.h>
-#include <unistd.h>
-#include <fcntl.h>
 int f_fatfs = -1;
 #endif
 
